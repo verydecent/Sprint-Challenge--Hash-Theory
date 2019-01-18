@@ -25,8 +25,13 @@ This sprint challenge is divided up into three parts: Boolean algebra (11 points
 During your challenge, you will be pulled aside by a PM for a 5 minute interview. During this interview, you will be expected to answer the following three questions:
 
   * 1. What is a computer and how does it work?
+  A computer is a machine that computes instructions. A computer processes these instructions as input through its processing unit using arithmetic in memory. Then an output is returned after said processing.
+
   * 2. What is an array and how does it work?
+  Arrays are one of the most common data structures we work with in memory. Arrays are index based contiguous blocks of memory that is allocated based on the number of declared items in the array. One important thing to remember about Arrays are that we access the address of all blocks on said array by referening to the first block of memory. These are called pointers, rather than having to carry around the whole wize of the array, which can cause slow down, we can carry pointer and run arithmetic to find subsequent items in the array. Insertion for arrays is O(1), deletion is O(n), and search is also O(n).
+
   * 3. What is a hash table and how does it work?
+  Hash tables are also another form a common data structure. Hash tables accept key value pair items into its array. Hash table uses a hashing function that inputs the items key wether thats a string or integer and returns a number based on the amount of allowed space in the Hash tables array. This number is used as the key value items index in the Hash tables array. Sometimes when a new item is processed through the hashing function, a number is returned and that index numbers place had already been taken. This is called collision and there are two approaches to this challenege. The first solution, we can implement a function to check if the next available space in the array is taken. The second solution, we can implement linked lists to each array in the hash table. If we run into a collisioin, we can use that same array index and implement a link to the next key value item.
 
 You will receive points at the PM's discretion based on the following criteria:
 
